@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najam Cyber Cafe & Xerox | Amravati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #0a192f;
+            --accent-gold: #f39c12; /* Matches your logo signal icon */
+            --text-light: #ffffff;
+            --card-bg: #112240;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
+                        url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 3px solid var(--accent-gold);
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        .tagline { font-style: italic; color: var(--accent-gold); font-weight: 300; }
+
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); border: 1px solid var(--accent-gold); }
+        .card h2 { color: var(--accent-gold); border-bottom: 1px solid #233554; padding-bottom: 10px; }
+
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px 0; border-bottom: 1px solid #233554; display: flex; justify-content: space-between; }
+        li span { color: var(--accent-gold); font-weight: bold; }
+
+        .csc-section {
+            background: #1d2d50;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-radius: 15px;
+        }
+
+        .csc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .csc-item {
+            background: var(--primary-dark);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .contact-bar {
+            background: var(--accent-gold);
+            color: black;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.7; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Najam Online Workshop Logo" class="logo" onerror="this.style.display='none'">
+    <h1>NAJAM CYBER CAFE & XEROX</h1>
+    <p class="tagline">"Fast, Reliable & Digital Solutions – Just for You"</p>
+</header>
+
+<div class="container">
+    
+    <section>
+        <h2 style="text-align: center;">🖨️ Printing & Xerox Rates</h2>
+        <div class="pricing-grid">
+            <div class="card">
+                <h2>Xerox & Prints</h2>
+                <ul>
+                    <li>Xerox (B&W) <span>₹1 / page</span></li>
+                    <li>Xerox (Color) <span>₹5 / page</span></li>
+                    <li>PDF/WhatsApp (B&W) <span>₹2 / page</span></li>
+                    <li>PDF/WhatsApp (Color) <span>₹5 / page</span></li>
+                    <li>Scanning <span>₹10 / page</span></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Lamination & Photos</h2>
+                <ul>
+                    <li>A4 Regular <span>₹10</span></li>
+                    <li>A4 Premium <span>₹20</span></li>
+                    <li>ID Card Lamination <span>₹50</span></li>
+                    <li>Passport Photo (6/8 copies) <span>₹60</span></li>
+                    <li>Resume Making <span>Available</span></li>
+                </ul>
+            </div>
+        </div>
+        <p style="text-align: center; font-size: 0.8rem; margin-top: 10px;">* Bulk work rates negotiable. Rates subject to change.</p>
+    </section>
+
+    <section class="csc-section">
+        <h2 style="text-align: center; color: var(--accent-gold);">🏛️ CSC & Digital Services</h2>
+        <div class="csc-grid">
+            <div class="csc-item">🆔 Aadhaar & PAN</div>
+            <div class="csc-item">🗳️ Voter ID & Passport</div>
+            <div class="csc-item">📄 Income / Caste / Birth Cert.</div>
+            <div class="csc-item">🏥 Ayushman Card (ABHA)</div>
+            <div class="csc-item">🌾 PM Kisan & Pension</div>
+            <div class="csc-item">💼 Job Forms & Scholarship</div>
+            <div class="csc-item">💳 Cash Withdrawal (AEPS)</div>
+            <div class="csc-item">🔌 Bill Payments & Recharges</div>
+        </div>
+    </section>
+
+    <section class="contact-bar">
+        <h2>Visit Our Shop</h2>
+        <p>📍 SYED MANSION, Gali No. 04, Jameel Colony, Transport Nagar, Amravati</p>
+        <p>📞 +91 9970816142 | +91 93075 74957</p>
+        <p>⏰ Open All Days: 10:30 AM - 11:30 PM</p>
+        
+        <a href="https://wa.me/919970816142?text=Hello%20Najam%20Cyber%20Cafe,%20I%20want%20to%20print%20a%20document." class="btn-whatsapp">
+            📲 Send Documents on WhatsApp
+        </a>
+        <br>
+        <a href="https://share.google/A0HAA2mefCCW3bXtd" target="_blank" style="color: black; display: inline-block; margin-top: 15px;">📍 View on Google Maps</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Najam Cyber Cafe & Xerox. All services available as per government rules.</p>
+</footer>
+
+</body>
+</html>

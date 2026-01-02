@@ -8,7 +8,7 @@
     <style>
         :root {
             --primary-dark: #0a192f;
-            --accent-gold: #f39c12; /* Matches your logo signal icon */
+            --accent-gold: #f39c12; 
             --text-light: #ffffff;
             --card-bg: #112240;
         }
@@ -23,8 +23,8 @@
         }
 
         header {
-            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), 
-                        url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000');
+            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), 
+                        url('https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?q=80&w=1000');
             background-size: cover;
             text-align: center;
             padding: 60px 20px;
@@ -32,12 +32,12 @@
         }
 
         .logo {
-            max-width: 150px;
+            max-width: 180px;
             margin-bottom: 20px;
         }
 
         h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
-        .tagline { font-style: italic; color: var(--accent-gold); font-weight: 300; }
+        .tagline { font-style: italic; color: var(--accent-gold); font-weight: 300; margin-top: 10px; }
 
         .container { max-width: 1100px; margin: auto; padding: 20px; }
 
@@ -54,12 +54,13 @@
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             transition: transform 0.3s;
+            border: 1px solid transparent;
         }
         .card:hover { transform: translateY(-5px); border: 1px solid var(--accent-gold); }
-        .card h2 { color: var(--accent-gold); border-bottom: 1px solid #233554; padding-bottom: 10px; }
+        .card h2 { color: var(--accent-gold); border-bottom: 1px solid #233554; padding-bottom: 10px; margin-top: 0; }
 
         ul { list-style: none; padding: 0; }
-        li { padding: 8px 0; border-bottom: 1px solid #233554; display: flex; justify-content: space-between; }
+        li { padding: 10px 0; border-bottom: 1px solid #233554; display: flex; justify-content: space-between; }
         li span { color: var(--accent-gold); font-weight: bold; }
 
         .csc-section {
@@ -71,7 +72,7 @@
 
         .csc-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 15px;
             text-align: center;
         }
@@ -81,105 +82,112 @@
             padding: 15px;
             border-radius: 8px;
             font-size: 0.9rem;
+            border-left: 3px solid var(--accent-gold);
         }
 
         .contact-bar {
             background: var(--accent-gold);
-            color: black;
-            padding: 30px;
+            color: #000;
+            padding: 40px 20px;
             text-align: center;
             margin-top: 50px;
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         .btn-whatsapp {
             display: inline-block;
             background: #25D366;
             color: white;
-            padding: 15px 30px;
+            padding: 18px 35px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-top: 25px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
         }
+        .btn-whatsapp:hover { background: #128C7E; transform: scale(1.05); }
 
-        footer { text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.7; }
+        footer { text-align: center; padding: 40px; font-size: 0.85rem; opacity: 0.7; }
 
         @media (max-width: 600px) {
             h1 { font-size: 1.8rem; }
-            .card { width: 100%; }
+            .pricing-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Najam Online Workshop Logo" class="logo" onerror="this.style.display='none'">
+    <img src="Black And White Modern Computer Service Logo.png" alt="Najam Online Workshop Logo" class="logo" onerror="this.style.display='none'">
     <h1>NAJAM CYBER CAFE & XEROX</h1>
-    <p class="tagline">"Fast, Reliable & Digital Solutions – Just for You"</p>
+    <p class="tagline">According to you</p>
 </header>
 
 <div class="container">
     
     <section>
-        <h2 style="text-align: center;">🖨️ Printing & Xerox Rates</h2>
+        <h2 style="text-align: center; font-size: 2rem;">🖨️ Printing & Xerox Rates</h2>
         <div class="pricing-grid">
             <div class="card">
                 <h2>Xerox & Prints</h2>
                 <ul>
                     <li>Xerox (B&W) <span>₹1 / page</span></li>
                     <li>Xerox (Color) <span>₹5 / page</span></li>
-                    <li>PDF/WhatsApp (B&W) <span>₹2 / page</span></li>
-                    <li>PDF/WhatsApp (Color) <span>₹5 / page</span></li>
+                    <li>PDF/WhatsApp Print (B&W) <span>₹2 / page</span></li>
+                    <li>PDF/WhatsApp Print (Color) <span>₹5 / page</span></li>
                     <li>Scanning <span>₹10 / page</span></li>
                 </ul>
             </div>
             <div class="card">
                 <h2>Lamination & Photos</h2>
                 <ul>
-                    <li>A4 Regular <span>₹10</span></li>
-                    <li>A4 Premium <span>₹20</span></li>
+                    <li>A4 Regular Lamination <span>₹10</span></li>
+                    <li>A4 Premium Lamination <span>₹20</span></li>
                     <li>ID Card Lamination <span>₹50</span></li>
                     <li>Passport Photo (6/8 copies) <span>₹60</span></li>
-                    <li>Resume Making <span>Available</span></li>
+                    <li>Resume / Biodata Making <span>Available</span></li>
                 </ul>
             </div>
         </div>
-        <p style="text-align: center; font-size: 0.8rem; margin-top: 10px;">* Bulk work rates negotiable. Rates subject to change.</p>
+        <p style="text-align: center; font-size: 0.9rem; margin-top: 15px; opacity: 0.8;">
+            * Bulk work rates negotiable. Rates subject to change.
+        </p>
     </section>
 
     <section class="csc-section">
-        <h2 style="text-align: center; color: var(--accent-gold);">🏛️ CSC & Digital Services</h2>
+        <h2 style="text-align: center; color: var(--accent-gold); margin-bottom: 30px;">🏛️ CSC & Digital Services</h2>
         <div class="csc-grid">
-            <div class="csc-item">🆔 Aadhaar & PAN</div>
-            <div class="csc-item">🗳️ Voter ID & Passport</div>
-            <div class="csc-item">📄 Income / Caste / Birth Cert.</div>
-            <div class="csc-item">🏥 Ayushman Card (ABHA)</div>
-            <div class="csc-item">🌾 PM Kisan & Pension</div>
-            <div class="csc-item">💼 Job Forms & Scholarship</div>
-            <div class="csc-item">💳 Cash Withdrawal (AEPS)</div>
+            <div class="csc-item">🆔 Aadhaar & PAN Services</div>
+            <div class="csc-item">🗳️ Voter ID & Passport Online</div>
+            <div class="csc-item">📄 Income / Caste / Domicile</div>
+            <div class="csc-item">🏥 Ayushman Bharat (ABHA)</div>
+            <div class="csc-item">🌾 PM Kisan & Pension Schemes</div>
+            <div class="csc-item">💼 Govt Job & Scholarship Forms</div>
+            <div class="csc-item">💳 Cash Withdrawal & Money Transfer</div>
             <div class="csc-item">🔌 Bill Payments & Recharges</div>
         </div>
+        <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">All services available as per government rules.</p>
     </section>
 
     <section class="contact-bar">
-        <h2>Visit Our Shop</h2>
-        <p>📍 SYED MANSION, Gali No. 04, Jameel Colony, Transport Nagar, Amravati</p>
-        <p>📞 +91 9970816142 | +91 93075 74957</p>
+        <h2 style="margin-top:0;">Visit Our Shop</h2>
+        <p style="font-size: 1.2rem; font-weight: 600;">📍 SYED MANSION, GALI NO. 04, LEFT SIDE,<br>Jameel Colony, Transport Nagar, Amravati, 444601</p>
+        <p style="font-size: 1.3rem; font-weight: bold; margin: 10px 0;">📞 +91 93075 74957</p>
         <p>⏰ Open All Days: 10:30 AM - 11:30 PM</p>
         
-        <a href="https://wa.me/919970816142?text=Hello%20Najam%20Cyber%20Cafe,%20I%20want%20to%20print%20a%20document." class="btn-whatsapp">
+        <a href="https://wa.me/919307574957?text=Hello%20Najam%20Cyber%20Cafe,%20I%20want%20to%20print%20a%20document." class="btn-whatsapp">
             📲 Send Documents on WhatsApp
         </a>
         <br>
-        <a href="https://share.google/A0HAA2mefCCW3bXtd" target="_blank" style="color: black; display: inline-block; margin-top: 15px;">📍 View on Google Maps</a>
+        <a href="https://share.google/A0HAA2mefCCW3bXtd" target="_blank" style="color: #000; display: inline-block; margin-top: 20px; font-weight: bold;">📍 Open in Google Maps</a>
     </section>
 
 </div>
 
 <footer>
-    <p>&copy; 2024 Najam Cyber Cafe & Xerox. All services available as per government rules.</p>
+    <p>&copy; 2024 Najam Cyber Cafe & Xerox. Documents & government charges extra.</p>
 </footer>
 
 </body>
